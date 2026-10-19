@@ -25,7 +25,7 @@ on:
     inputs:
       tag:
         description: 'Existing tag to build, for example v0.10.0'
-        required: true
+        required: false
       overwrite:
         description: 'Replace the assets of an existing release for that tag'
         type: boolean
