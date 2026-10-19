@@ -50,6 +50,8 @@ jobs:
         with:
           # A tag push checks out the tag; a manual dispatch checks out the tag it was given.
           ref: ${{ inputs.tag || github.ref }}
+          fetch-depth: 0      
+          fetch-tags: true 
 
       - name: Set up JDK 21
         uses: actions/setup-java@v6
